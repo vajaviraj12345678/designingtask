@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css" />
+  <title>Page 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      width: 100%;
+      height: 40px;
+      top: 0;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #183380;
+    }
+
+    img.Logo {
+      width: 65.9px;
+      height: 23px;
+      /* margin-right: 700px; */
+      margin-top: 5px;
+      margin-left: 100px;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .topics {
+      width: 450px;
+      height: 38px;
+      margin: 100px 532px 0px 630px;
+      font-family: NunitoSans;
+      font-size: 28px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: var(--dark);
+    }
+
+    .Rectangle1 {
+      width: 580px;
+      height: 320px;
+      margin: 40px 435px 0px 530px;
+      padding: 35px 55px 20px 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+      background-color: var(--white);
+    }
+
+
+    img.Group-2 {
+      width: 22px;
+      height: 12px;
+      /* margin: 16px 2px 14px 154px; */
+      object-fit: contain;
+      opacity: 0.15;
+    }
+
+    .Rectangle-61 {
+      width: 350px;
+      height: 45px;
+      margin: 0 0 35px 170px;
+      padding: 12px 107.5px 11px;
+      border: 0px;
+      border-radius: 24.5px;
+      background-color: #20cdbb;
+    }
+
+    .signup {
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+
+    .Rectanglefooter {
+      width: 100%;
+      height: 40px;
+      /* margin: 71px 0 0 */
+      bottom: 0px;
+      position: fixed;
+      background-color: #1c2646;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .Whats-your-purpose-h {
+      width: 147px;
+      height: 16px;
+      margin: 0px 4px 13px 20px;
+      opacity: 0.3;
+      font-family: NunitoSans;
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #242a41;
+    }
+    .button1 {
+    width: 107px;
+    height: 34px;
+    margin: 0 15px 0 20px;
+    padding: 9px 24px 9px 25px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button1:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button2 {
+    width: 147px;
+    height: 34px;
+    margin: 0 15px 0 -5px;
+    padding: 9px 21px 9px 23px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button2:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button3 {
+    width: 137px;
+    height: 34px;
+    margin: 0 15px 0 -5px;
+    padding: 9px 18px 9px 19px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button3:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button4 {
+    width: 107px;
+    height: 34px;
+    margin: 0 0 0 0px -20px; 
+    padding: 9px 18px 9px 21px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button4:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button5 {
+    width: 107px;
+    height: 34px;
+    margin: 30px 15px 0 20px;
+    padding: 9px 24px 9px 25px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button5:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button6 {
+    width: 147px;
+    height: 34px;
+    margin: 0 15px 0 -5px;
+    padding: 9px 21px 9px 23px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button6:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button7 {
+    width: 106px;
+    height: 34px;
+    margin: 0 15px 0px -5px;
+    padding: 9px 23px 9px 24px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button7:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button8 
+    {
+      width: 150px;
+      height: 34px;
+      margin: 0 0 0 0px -10px; 
+      padding: 9px 18px 9px 21px;
+      border-radius: 17px;
+      border: solid 1px rgba(36, 42, 65, 0.2);
+      background-color: white;
+      }
+      .button8:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button9 {
+    width: 107px;
+    height: 34px;
+    margin: 30px 15px 0 20px;
+    padding: 9px 24px 9px 25px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button9:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button10 {
+    width: 147px;
+    height: 34px;
+    margin: 0 15px 0 -5px;
+    padding: 9px 21px 9px 23px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button10:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button11 {
+    width: 137px;
+    height: 34px;
+    margin: 0 15px 0 -5px;
+    padding: 9px 18px 9px 19px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button11:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button12 {
+    width: 107px;
+    height: 34px;
+    margin: 0 0 0 0px -20px; 
+    padding: 9px 18px 9px 21px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button12:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button13 {
+    width: 107px;
+    height: 34px;
+    margin: 30px 15px 0 90px;
+    padding: 9px 24px 9px 25px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button13:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button14 {
+    width: 147px;
+    height: 34px;
+    margin: 0 15px 0 -5px;
+    padding: 9px 21px 9px 23px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button14:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+    .button15 {
+    width: 137px;
+    height: 34px;
+    margin: 0 15px 0 -5px;
+    padding: 9px 18px 9px 19px;
+    border-radius: 17px;
+    border: solid 1px rgba(36, 42, 65, 0.2);
+    background-color: white;
+    }
+    .button15:hover
+    {
+      border-color:#51a8d1;
+      color: #51a8d1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <img src="./img/logo.png" class="Logo">
+    </div>
+    <div style="color:white; margin-right: 90px;">
+      <span class="Log-In Text-Style">Reading Preference</span>
+    </div>
+    <div></div>
+  </div>
+  <div class="main">
+    <div class="topics">What topics are you interested in?</div>
+    <div class="Rectangle1">
+      <form method="post" name="myForm">
+        <button type="submit" class="button1">Business</button>
+        <button type="submit" class="button2">Finacial Market</button>
+        <button type="submit" class="button3">Market Analysis</button>
+        <button type="submit" class="button4">Interviews</button>
+        <button type="submit" class="button5">Media</button>
+        <button type="submit" class="button6">Interviews</button>
+        <button type="submit" class="button7">Economy</button>
+        <button type="submit" class="button8">polity and Market</button>
+        <button type="submit" class="button9">Business</button>
+        <button type="submit" class="button10">Finacial Market</button>
+        <button type="submit" class="button11">Market Analysis</button>
+        <button type="submit" class="button12">Interviews</button>
+        <button type="submit" class="button13">Bloomberg</button>
+        <button type="submit" class="button14">Stocks & Coins</button>
+        <button type="submit" class="button15">IPO</button>
+        <div style="margin-left: -35px;">
+          <button type="button" class="Rectangle-61" style="margin-top: 40px;"><span
+            style="color: white; font-size:12px; font-weight: 800; height: 10px;">Get Started</span></button>
+        </div>
+      </form>
+    </div>
+    <div class="signup">
+      Skip this step
+    </div>
+  </div>
+  <div class="Rectanglefooter">
+    <span style="color: white;">
+      © 2018 Rayft. All rights reserved.
+    </span>
+    <div style="visibility: hidden;"></div>
+    <div></div>
+    <div></div>
+    <div>
+      <i class="fa fa-facebook-square" aria-hidden="true" style="margin-left: 110px; color: white;"></i>
+      <i class="fa fa-twitter" aria-hidden="true" style="margin-left: 10px; color: white;"></i>
+      <i class="fa fa-google-plus" aria-hidden="true" style="margin-left: 10px; color: white;"></i>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#toggle_pwd").click(function () {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var type = $(this).hasClass("fa-eye-slash") ? "text" : "password";
+        $("#txtPassword").attr("type", type);
+      });
+    });
+  </script>
+</body>
+
+</html>
